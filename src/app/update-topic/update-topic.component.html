@@ -1,0 +1,22 @@
+<h3>Update Topic</h3>
+<div [hidden]="submitted" style="width: 400px;">
+<!--<div style="width: 400px;">-->
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="id">Id</label>
+      <input type="text" class="form-control" id="id" required [(ngModel)]="topic.id" name="id">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Topic Name</label>
+      <input type="text" class="form-control" id="name" required [(ngModel)]="topic.name" name="name">
+    </div>
+
+    <div class="form-group">
+      <label for="description">Topic Description</label>
+      <input type="text" class="form-control" id="description" required [(ngModel)]="topic.description" name="description">
+    </div>
+
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div>

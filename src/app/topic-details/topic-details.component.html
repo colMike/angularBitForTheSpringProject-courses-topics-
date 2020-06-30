@@ -1,0 +1,18 @@
+<h2>Topic Details</h2>
+
+<hr/>
+<div *ngIf="topic">
+  <div>
+    <label><b>Topic Id: </b></label> {{topic.id}}
+  </div>
+  <div>
+    <label><b>Topic Name: </b></label> {{topic.name}}
+  </div>
+  <div>
+    <label><b>Topic Description: </b></label> {{topic.description}}
+  </div>
+</div>
+
+<br>
+<br>
+<button (click)="list()" class="btn btn-primary">Back to Topic List</button><br>
